@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final project</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: black;
+            color: #fff;
+            width: 99%;
+            height: 70px;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: 800;
+        }
+
+        dot {
+            color: #FFC853;
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            margin-right: 13px;
+        }
+
+        .color {
+            color: orange;
+        }
+
+        button {
+            padding: 5px 25px;
+            border-radius: 5px;
+            border: 3px solid #FFC853;
+            background-color: black;
+            color: #fff;
+            font-size: 20px;
+            align-items: center;
+            text-align: center;
+        }
+
+
+        /* home screen */
+
+
+        .homepage_screen {
+            background-image: url(hero-bg.jpg);
+            color: #fff;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 80vh;
+            padding-top: 100px;
+        }
+
+
+
+        .home_heading {
+            font-size: 50px;
+            color: #fff;
+            margin: 0 450px 0 450px;
+            font-weight: bold;
+        }
+
+        .home_subheading {
+            font-size: 20px;
+            color: #82828B;
+            font-weight: bold;
+            margin-bottom: 50px;
+        }
+
+        .home_box {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-size: 25px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .box_1 {
+            border: 1px solid #616161;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .icon {
+            font-size: 30px;
+            color: #FFC451;
+        }
+
+        .box_txt {
+            font-size: 15px;
+        }
+
+
+        .content_page_screen {
+            display: flex;
+            width: 100%;
+            margin-top: 50px;
+            padding: 0 20px;
+            align-items: start;
+            line-height: 30px;
+        }
+
+        .left_content,
+        .right_content {
+            width: 50%;
+        }
+
+        .content_heading {
+            font-size: 23px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .content_subheading {
+            font-size: 16px;
+            font-style: italic;
+            color: rgb(104, 99, 99);
+            margin-bottom: 10px;
+        }
+
+        .content_lists {
+            margin-bottom: 15px;
+        }
+
+        .checkmark {
+            color: #FFC360;
+            font-weight: 800;
+        }
+
+        .content_sponsers_screen {
+
+            display: flex;
+            flex-wrap: row-column-wrap;
+            justify-content: space-around;
+            gap: 15px;
+            align-items: center;
+            text-align: center;
+            margin-top: 150px;
+        }
+
+        .sponsers_img {
+            color: #9E9E9E;
+        }
+
+        .content_sponsers_circle {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            align-items: center;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .sponsers_circle {
+            background-color: gray;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            border: 1px solid gray;
+        }
+
+        .sponsers_circle_clr {
+            background-color: orange;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            border: 1px solid orange;
+        }
+
+        .content_keyboard_screen {
+
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            margin-top: 50px;
+            padding: 0 20px;
+            align-items: start;
+        }
+
+        .left_keyboard {
+            width: 50%;
+            height: 50%;
+        }
+
+        .right_keyboard {
+            width: 50%;
+            height: 50%;
+        }
+
+
+        .key_heading {
+            padding: 10px;
+            font-weight: 800;
+
+        }
+
+        .key_icon {
+            display: flex;
+            margin: 40px 30px 0 0;
+            font-size: 50px;
+            color: #FFC451;
+
+        }
+
+        .key_text_1 {
+            display: flex;
+
+        }
+
+        .key_subheading {
+            color: #82828B;
+        }
+
+        .services_screen {
+            display: flex;
+            width: 100%;
+            margin-top: 100px;
+            padding: 0 34px;
+            align-items: start;
+
+        }
+
+        .services_heading {
+            margin: 0 0 0 10px;
+            font-size: 10px;
+            color: #82828B;
+        }
+
+        .services_subheading {
+            font-size: 20px;
+            margin: 20px 5px 0;
+            font-weight: bold;
+        }
+
+        .service_box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: justify-content;
+            gap: 30px;
+            font-size: 20px;
+            margin: 80px 80px 0 0;
+            align-items: center;
+
+            text-align: center;
+
+        }
+
+        .boxes_1 {
+            border: 1px solid #616161;
+            width: 200px;
+            height: 150px;
+            padding: 30px;
+            border-radius: 5px;
+            text-align: center;
+            align-items: center;
+
+
+        }
+
+        .icons {
+
+            background-color: #FFC451;
+            font-size: 30px;
+        }
+
+        .boxes_txt {
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .boxes_subtxt {
+            font-size: 12px;
+            margin-top: 10px;
+
+        }
+
+        .Action_screen {
+            background-image: url(cta-bg.jpg);
+            color: #fff;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 60vh;
+            margin-top: 120px;
+        }
+
+
+        .Action_heading {
+            font-size: 32px;
+            color: #fff;
+            padding: 30px 0;
+            margin: 0 450px 0 450px;
+            font-weight: bold;
+        }
+
+        .Action_subheading {
+            font-size: 17px;
+
+            color: #E6E6E6;
+            padding: 0 40px 100px 40px;
+            line-height: 30px;
+
+            margin-bottom: 10px;
+        }
+
+        .Call_To_Action {
+
+            border: 2px solid white;
+            width: 150px;
+            padding: 10px;
+            font-size: 17px;
+            font-weight: bold;
+            text-align: center;
+            margin: 2% 53% 0 47%;
+
+
+        }
+
+
+        .portfolio_screen {
+            margin: 100px 0;
+        }
+
+        .portfolio_heading {
+            margin-left: 50px;
+            color: #616161;
+        }
+
+        .line {
+            width: 100px;
+            height: 2px;
+            margin-left: 140px;
+            background-color: #FFC451;
+            position: relative;
+            top: -10px;
+        }
+
+        .portfolio_subheading {
+            color: black;
+            font-weight: bold;
+            font-size: 24px;
+            margin-left: 100px;
+            padding: 10px;
+            width: 200px;
+        }
+
+        .portfolio_cards {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px;
+            font-size: 14px;
+            color: #616161;
+        }
+
+        .cards_color {
+            background-color: #FFC360;
+            padding: 3px;
+            border-radius: 3px;
+        }
+
+        .portfolio_images {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 10px 10%;
+            align-items: center;
+        }
+
+        .left_img,
+        .center_img,
+        .right_img {
+            width: 50%;
+        }
+
+        .left_img img,
+        .center_img img,
+        .right_img img {
+            width: 70%;
+            height: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .navigation {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 30%;
+        }
+
+        .iconse {
+            font-size: 40px;
+            color: #FFC451;
+        }
+
+
+
+
+        .testimonial_screen {
+
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            margin-top: 50px;
+            padding: 0 20px;
+            align-items: start;
+        }
+
+        .left_testimonial {
+            width: 50%;
+            height: 50%;
+        }
+
+        .right_testimonial {
+            width: 50%;
+            height: 50%;
+        }
+
+
+        .test_heading {
+            font-size: 32px;
+            padding-top: 50px;
+            font-weight: 800;
+
+        }
+
+        .test_icon {
+            display: flex;
+            margin: 40px 30px 0 0;
+
+        }
+
+        .test_text_1 {
+            display: flex;
+
+        }
+
+        .test_subheading {
+            color: #82828B;
+        }
+
+        .test_header {
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .test_subheader {
+            padding-top: 10px;
+
+        }
+
+        .storeowner_screen {
+            background-image: url(testimonials-bg.jpg);
+            color: #fff;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 60vh;
+            margin-top: 120px;
+            opacity: 3;
+
+
+        }
+
+        .owner_heading {
+
+            font-size: 32px;
+            color: #fff;
+            padding-top: 100px;
+            margin: 0 450px 0 450px;
+            font-weight: bold;
+        }
+
+        .owner_subheading {
+            font-size: 17px;
+            color: #E6E6E6;
+            padding: 0 40px 100px 40px;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            padding-bottom: 40%;
+
+        }
+
+        .drop {
+            color: white;
+
+        }
+
+        .c {
+            color: #FFC451;
+        }
+
+        .home {
+            color: #FFC451;
+        }
+
+
+        .content_sponser_circle {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        .sponser_circle {
+            background-color: gray;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            border: 1px solid gray;
+        }
+
+        .sponser_circle_clr {
+            background-color: orange;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            border: 1px solid orange;
+        }
+
+        .circle {
+            pdaaing-top: 34px;
+            border-radius: 50px;
+        }
+
+        .ourteam_screen {
+            margin: 100px 0;
+        }
+
+        .ourteam_heading {
+            margin-left: 50px;
+            font-size: 10px;
+            color: C6C6C7;
+        }
+
+        .ourteam_subheading {
+            color: black;
+            font-weight: bold;
+            font-size: 24px;
+            margin-left: 100px;
+            padding: 10px;
+            width: 200px;
+
+        }
+
+        .ourteam_images {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 10px 10%;
+            align-items: center;
+            gap: 10%;
+        }
+
+        .left_img,
+        .center_img,
+        .right_img {
+            width: 100%;
+
+
+        }
+
+        .left_img img,
+        .center_img img,
+        .right_img img {
+            width: 100%;
+			height: 120%;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+        .team1 {
+            font-size: 12px;
+            font-weight: 800;
+            border: 3px solid #F7F7F7;
+            padding: 10px;
+        }
+
+        .team2 {
+            font-size: 8px;
+            color: #E6E6E6;
+        }
+
+        .contact_Us {
+
+            margin: 100px 0;
+
+        }
+
+        .contact_header {
+            margin-left: 50px;
+            font-size: 10px;
+            color: C6C6C7;
+
+        }
+
+        .contact_subheader {
+            color: black;
+            font-weight: bold;
+            font-size: 24px;
+            margin-left: 100px;
+            padding: 10px;
+            width: 200px;
+        }
+
+        .contact_items {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 10px 10%;
+            align-items: center;
+            width: 50%;
+            height: 50%;
+
+        }
+
+        .contact_heading {
+            padding-top: 10px;
+            font-weight: 800;
+
+        }
+
+        .contact_icon {
+            display: flex;
+            padding: 10px;
+            font-size: 20px;
+            color: #FFC451;
+
+        }
+
+        .contact_text_1 {
+            display: flex;
+
+        }
+
+        .contact_subheading {
+            color: #82828B;
+            margin-bottom: 10px;
+        }
+
+        .contact_lists {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .contact_cnt {
+            margin-left: 150px;
+        }
+
+        .input_contact {
+            width: 60%;
+        }
+
+        .input_contact input {
+            padding: 5px 30px;
+            margin:20px 10px 0 0;
+        }
+
+        .input_subject input {
+            width: 49%;
+            margin: 10px 0;
+        }
+
+        .send_msg {
+            margin: 8px 30px;
+            background-color: #FFC360;
+			color:black;
+            position: relative;
+            left: -360px;
+            top: 50px;
+        }
+
+        .footer{
+            display: flex;
+            justify-content: space-evenly;
+            line-height: 30px;
+            background-color: rgb(26, 23, 23);
+            color: #fff;
+            align-items: center;
+        }
+.footer_sponsers{
+display:flex;
+justify-content:space- evenly;
+margin-bottom:110px;
+font-size:15px;
+gap:14px;
+background-color:#292929;
+
+}
+        .footer_logo{
+            margin-top: 120px;
+            line-height: 30px;
+            font-size: 20px;
+        }
+        .copyrights{
+            background-color: black;
+            padding: 50px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+
+        }
+		
+		.news_btn{
+		background-color:#FFC853;
+		color:black;
+		font-size:14px;
+		}
+		@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 0 20px; /* Adjust padding as needed */
+    }
+
+    /* Add additional styles for smaller screens */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Add additional styles for medium-sized screens */
+}
+
+@media only screen and (min-width: 1025px) { 
+    /* Add additional styles for larger screens */
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                GP<span>. </span>
+            </div>
+            <div class="nav">
+                <a href="# ">
+                    <span class="home">Home</span>
+                </a>
+                <a href=" # ">About</a>
+                <a href="# ">Services</a>
+                <a href="# ">portfolio</a>
+                <a href="# ">Team</a>
+                <a href="# ">Drop Down <span class="drop"><ion-icon name="chevron-down-outline"></ion-icon></span></a>
+                <a href="# ">Contact</a>
+            </div>
+            <div class="header_btn">
+                <button>Get Started</button>
+            </div>
+        </div>
+        <div class="homepage_screen">
+
+            <div class="home_heading">
+                Powerfull digital Solutions with GP <span class="dot"> . </span>
+            </div>
+            <div class="home_subheading">
+                We are team of talented digital marketers
+            </div>
+            <div class="home_box">
+                <div class="box_1">
+                    <ion-icon name="archive-outline" class="icon"></ion-icon>
+                    <div class="box_txt">
+                        Lorem Ipsum
+                    </div>
+
+                </div>
+                <div class="box_1">
+                    <ion-icon name="calendar-outline" class="icon"></ion-icon>
+
+                    <div class="box_txt">
+                        Dolar Sitema
+                    </div>
+
+                </div>
+                <div class="box_1">
+                    <ion-icon name="file-tray-full-outline" class="icon"></ion-icon>
+                    <div class="box_txt">
+                        Sedare Peristance
+                    </div>
+
+                </div>
+                <div class="box_1">
+                    <ion-icon name="train-outline" class="icon"></ion-icon>
+                    <div class="box_txt">
+                        Magini Dollares
+                    </div>
+
+                </div>
+                <div class="box_1">
+                    <ion-icon name="hardware-chip-outline" class="icon"></ion-icon>
+                    <div class="box_txt">
+                        Nemos Enimade
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="content_page_screen">
+            <div class="left_content">
+                <div class="content_heading">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Beatae fuga obcaecati nobis. Enim odit qui, vel quasi distinctio beatae quod?
+                </div>
+                <div class="content_subheading">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                    illum facilis blanditiis sunt praesentium repudiandae quia iusto nesciunt quaerat
+                    necessitatibus assumenda alias, neque voluptatum minima soluta mollitia quidem dolorem reiciendis.
+                </div>
+                <div class="content_lists">
+                    <div><ion-icon name="checkmark-done-outline" class="checkmark"></ion-icon>Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Molestias, quod?</div>
+                    <div><ion-icon name="checkmark-done-outline" class="checkmark"></ion-icon>">Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Molestias, quod?</div>
+                    <div><ion-icon name="checkmark-done-outline" class="checkmark"></ion-icon>">Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Molestias, quod?</div>
+                    </ul>
+                </div>
+                <div class="content_subheading">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                    illum facilis blanditiis sunt praesentium repudiandae quia iusto nesciunt quaerat
+                    necessitatibus assumenda alias, uidem dolorem reiciendis.
+
+                </div>
+
+            </div>
+            <div class="right_content">
+                <img src="about.jpg" alt="img" width="90%" height="80%">
+            </div>
+        </div>
+        <div class="content_sponsers_screen">
+            <div class="sponsers_img">
+                <img src="client-7.png" alt="img" width="50px" height="50px">
+            </div>
+            <div class="sponsers_img">
+                <img src="client-8.png" alt="img" width="50px" height="50px">
+            </div>
+            <div class="sponsers_img">
+                <img src="client-1.png" alt="img" width="50px" height="50px">
+            </div>
+            <div class="sponsers_img">
+                <img src="client-7.png" alt="img" width="50px" height="50px">
+            </div>
+            <div class="sponsers_img">
+                <img src="client-2.png" alt="img" width="50px" height="50px">
+            </div>
+            <div class="sponsers_img">
+                <img src="client-3.png" alt="img" width="50px" height="50px">
+            </div>
+            <div class="sponsers_img">
+                <img src="client-4.png" alt="img" width="50px" height="50px">
+            </div>
+        </div>
+        <div class="content_sponsers_circle">
+            <div class="sponsers_circle">
+            </div>
+            <div class="sponsers_circle">
+            </div>
+            <div class="sponsers_circle">
+            </div>
+            <div class="sponsers_circle">
+            </div>
+            <div class="sponsers_circle">
+            </div>
+            <div class="sponsers_circle_clr">
+            </div>
+            <div class="sponsers_circle">
+            </div>
+        </div>
+        <div class="content_keyboard_screen">
+            <div class="left_keyboard">
+                <img src="features.jpg" alt="img" width="80%" height="50%">
+            </div>
+            <div class="right_keyboard">
+                <div class="key_text_1">
+                    <div class="key_icon">
+                        <ion-icon name="document-text-outline"></ion-icon>
+                    </div>
+                    <div class="key_content">
+                        <div class="key_heading">
+                            Est Labor add
+                        </div>
+                        <div class="key_subheading">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus sit commodi ut earum quam
+                            quas?
+                        </div>
+                    </div>
+
+                </div>
+                <div class="key_text_1">
+                    <div class="key_icon">
+                        <ion-icon name="pie-chart-outline"></ion-icon>
+                    </div>
+                    <div class="key_content">
+                        <div class="key_heading">
+                            Arrum esse gul
+                        </div>
+                        <div class="key_subheading">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus sit commodi ut earum quam
+                            quas?
+                        </div>
+                    </div>
+
+                </div>
+                <div class="key_text_1">
+                    <div class="key_icon">
+                        <ion-icon name="bookmarks-outline"></ion-icon>
+                    </div>
+                    <div class="key_content">
+                        <div class="key_heading">
+                            Aut acceate
+                        </div>
+                        <div class="key_subheading">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus sit commodi ut earum quam
+                            quas?
+                        </div>
+                    </div>
+
+                </div>
+                <div class="key_text_1">
+                    <div class="key_icon">
+                        <ion-icon name="prism-outline"></ion-icon>
+
+                    </div>
+                    <div class="key_content">
+                        <div class="key_heading">
+                            Baeate vessatile
+                        </div>
+                        <div class="key_subheading">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus sit commodi ut earum quam
+                            quas?
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="services_screen">
+            <div class="services_heading">SERVICES
+            </div>
+            <div class="services_subheading"> CHECK OUR SERVICES
+            </div>
+            <div class="service_box">
+                <div class="boxes_1">
+                    <ion-icon name="archive-outline" class="icons"></ion-icon>
+                    <div class="boxes_txt">
+                        Lorem Ipsum
+                    </div>
+                    <div class="boxes_subtxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                        illum facilis blanditiis suntr</div>
+
+                </div>
+                <div class="boxes_1">
+                    <ion-icon name="calendar-outline" class="icons"></ion-icon>
+
+                    <div class="boxes_txt">
+                        Dolar Sitema
+                    </div>
+                    <div class="boxes_subtxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                        illum facilis blanditiis sunt</div>
+
+                </div>
+                <div class="boxes_1">
+                    <ion-icon name="file-tray-full-outline" class="icons"></ion-icon>
+                    <div class="boxes_txt">
+                        Sedare Peristance
+                    </div>
+                    <div class="boxes_subtxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                        illum facilis blanditiis sunt</div>
+                </div>
+                <div class="boxes_1">
+                    <ion-icon name="train-outline" class="icons"></ion-icon>
+                    <div class="boxes_txt">
+                        Magini Dollares
+                    </div>
+                    <div class="boxes_subtxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                        illum facilis blanditiis sunt</div>
+                </div>
+                <div class="boxes_1">
+                    <ion-icon name="hardware-chip-outline" class="icons"></ion-icon>
+                    <div class="boxes_txt">
+                        Nemos Enimade
+                    </div>
+                    <div class="boxes_subtxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                        illum facilis blanditiis sunt</div>
+                </div>
+                <div class="boxes_1">
+                    <ion-icon name="hardware-chip-outline" class="icons"></ion-icon>
+                    <div class="boxes_txt">
+                        Nemos Enimade
+                    </div>
+                    <div class="boxes_subtxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                        illum facilis blanditiis sunt</div>
+                </div>
+            </div>
+        </div>
+        <div class="Action_screen">
+            <div class="Action_heading">
+                Call To Action
+            </div>
+            <div class="Action_subheading">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                illum facilis blanditiis sunt praesentium repudiandae quia iusto nesciunt quaerat
+                necessitatibus assumenda alias, uidem dolorem reiciendis.
+            </div>
+            <div class="Call_To_Action"> Call To Action</div>
+        </div>
+        <div class="portfolio_screen">
+            <div class="portfolio_heading">PORTFOLIO </div>
+            <div class="line"></div>
+            <div class="portfolio_subheading">
+                CHECK OUR PORTFOLIO
+            </div>
+            <div class="portfolio_cards">
+                <div class="cards_color">ALL</div>
+                <div>APP</div>
+                <div>CARD</div>
+                <div>WEB</div>
+            </div>
+            <div class="portfolio_images">
+                <div class="left_img">
+                    <img src="portfolio-1.jpg" alt="img">
+                    <img src="portfolio-6.jpg" alt="img">
+                </div>
+                <div class="center_img">
+                    <img src="portfolio-2.jpg" alt="">
+                    <img src="portfolio-5.jpg" alt="">
+                    <img src="portfolio-9.jpg" alt="">
+                </div>
+                <div class="right_img">
+                    <img src="portfolio-3.jpg" alt="">
+                    <img src="portfolio-4.jpg" alt="">
+                    <img src="portfolio-7.jpg" alt="">
+                    <img src="portfolio-8.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="testimonial_screen">
+            <div class="left_testimonial">
+                <img src="counts-img.jpg" alt="img" width="90%" height="30%">
+            </div>
+            <div class="right_testimonial">
+                <div class="test_header">Various educators teach rules governing the length of paragraphs</div>
+                <div class="test_subheader">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus sit
+                    commodi ut earum quam quas? </div>
+                <div class="left_text">
+                    <div class="test_text_1">
+                        <div class="test_icon">
+                            <ion-icon name="happy-outline" class="iconse"></ion-icon>
+                        </div>
+                        <div class="test_content">
+                            <div class="test_heading">
+                                45
+                            </div>
+                            <div class="test_subheading">
+                                <b>Lorem ipsum,</b> dolor sit amet consectetur adipisicing elit. Possimus sit commodi ut
+                                earum quam quas?
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="test_text_1">
+                        <div class="test_icon">
+                            <ion-icon name="calendar-outline" class="iconse"></ion-icon>
+                        </div>
+                        <div class="test_content">
+                            <div class="test_heading">
+                                04
+                            </div>
+                            <div class="test_subheading">
+                                <b>Lorem ipsum,</b> dolor sit amet consectetur adipisicing elit. Possimus sit commodi ut
+                                earum quam quas?
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="test_text_1">
+                        <div class="test_icon">
+                            <ion-icon name="stopwatch-outline" class="iconse"></ion-icon>
+                        </div>
+                        <div class="test_content">
+                            <div class="test_heading">
+                                10
+                            </div>
+                            <div class="test_subheading">
+                                <b>Lorem ipsum,</b> dolor sit amet consectetur adipisicing elit. Possimus sit commodi ut
+                                earum quam quas?
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="right_text">
+                    <div class="test_text_1">
+                        <div class="test_icon">
+                            <ion-icon name="timer-outline" class="iconse"></ion-icon>
+
+                        </div>
+                        <div class="test_content">
+                            <div class="test_heading">
+                                12
+                            </div>
+                            <div class="test_subheading">
+                                <b>Lorem ipsum,</b> dolor sit amet consectetur adipisicing elit. Possimus sit commodi ut
+                                earum quam quas?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="storeowner_screen">
+            <!--<div class="circle">
+			<img src="counts-img.jpg" alt="img" width="2%"  height="2%"></div>-->
+            <div class="owner_heading">
+                jenna carlois
+            </div>
+            <div class="owner_subheading">
+                store owner</div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                illum facilis blanditiis sunt praesentium repudiandae quia iusto nesciunt quaerat
+                necessitatibus assumenda alias, uidem dolorem reiciendis.
+
+                <div class="content_sponser_circle">
+                    <div class="sponser_circle">
+                    </div>
+                    <div class="sponser_circle">
+                    </div>
+                    <div class="sponser_circle_clr">
+                    </div>
+                    <div class="sponser_circle">
+                    </div>
+                    <div class="sponser_circle">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="ourteam_screen">
+            <div class="ourteam_heading">TEAM
+            </div>
+            <div class="ourteam_subheading">
+                CHECK OUR TEAM
+            </div>
+            <div class="ourteam_images">
+                <div class="left_img">
+                    <img src="team-1.jpg" alt="img">
+                    <div class="team1">Walter White
+                        <div class="team2">Cheif Execitive Officer</div>
+                    </div>
+                </div>
+
+
+                <div class="center_img">
+                    <img src="team-2.jpg" alt="img">
+                    <div class="team1">Sara Johnson
+                        <div class="team2">Product Management</div>
+                    </div>
+
+                </div>
+                <div class="center_img">
+                    <img src="team-3.jpg" alt="img">
+                    <div class="team1"> William Anderson
+                        <div class="team2">CFO</div>
+                    </div>
+
+                </div>
+                <div class="right_img">
+                    <img src="team-4.jpg" alt="img">
+                    <div class="team1">Amonda jobson
+                        <div class="team2">Accountant</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact_Us">
+            <div class="contact_header">
+                CONTACT
+            </div>
+            <div class="contact_subheader">
+                CONTACT US
+            </div>
+            <div class="map">
+                <img src="map.png" alt="img" width="100%">
+            </div>
+            <div class="contact_lists">
+                <div class="contact_cnt">
+                    <div class="contact_text_1">
+                        <div class="contact_icon">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="contact_content">
+                            <div class="contact_heading">
+                                Location:
+                            </div>
+                            <div class="contact_subheading">
+                                53,cisco,cambinbridge
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="contact_text_1">
+                        <div class="contact_icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="contact_content">
+                            <div class="contact_heading">
+                                Email:
+                            </div>
+                            <div class="contact_subheading">
+                                @example.com
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="contact_text_1">
+                        <div class="contact_icon">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </div>
+                        <div class="contact_content">
+                            <div class="contact_heading">
+                                Call:
+                            </div>
+                            <div class="contact_subheading">
+                                +1 232332323232
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="input_contact">
+                    <div>
+                        <input type="text" placeholder="Your Name">
+                        <input type="text" placeholder="your Email">
+                    </div>
+                    <div class="input_subject">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <textarea name="Subject" id="" cols="69" rows="6" style="padding: 10px;">Subject</textarea>
+                    <button class="send_msg">Send Message</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_logo">
+                <div class="foot_logo__txt">
+                    GP<span class="home">.</span>
+                </div>
+                <div class="foot_logo__txt">
+                    <h6> A108 Adam Street</h6>
+                    <h6> NY 535022,USA</h6>
+                </div>
+                <div class="foot_logo__txt">
+                    <h6> Phone: 987645325</h6>
+                    <h6> Email:info@example.com</h6>
+                </div>
+                <div class="footer_sponsers">
+                    <div>
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </div>
+                    <div>
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </div>
+                    <div>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </div>
+                    <div>
+                         <ion-icon name="logo-skype"></ion-icon>
+                    </div>
+                    <div>
+                       <ion-icon name="logo-linkedin"></ion-icon>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer_links">
+                <div class="foot_logo__txt">
+                    Useful links
+                </div>
+                <div>Home</div>
+                <div>About us</div>
+                <div>Services</div>
+                <div>Terms and Services</div>
+                <div>Privacy policy</div>
+            </div>
+            <div class="footer_services">
+                <div class="foot_logo__txt">
+                    Our Services
+                </div>
+                <div>Web Design</div>
+                <div>Web Development</div>
+                <div>Product Management</div>
+                <div>Marketing</div>
+                <div>Graphic Design</div>
+            </div>
+            <div class="footer_newsletter">
+                <div class="foot_logo__txt">
+                    Our footer_newsletter
+                </div>
+                <div class="news_txt">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, enim.
+                </div>
+                <input type="text">
+                <button class="news_btn">subscribe</button>
+            </div>
+        </div>
+        <div class="copyrights">
+            copyrights GP. All Rights Reserved
+            <br>
+            Designed by BootstrapMade             
+        </div>
+    </div>
+
+    
+
+</body>
+
+</html>
